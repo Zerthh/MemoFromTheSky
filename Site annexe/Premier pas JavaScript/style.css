@@ -1,0 +1,243 @@
+body{
+   background: linear-gradient(180deg,#f9fed8 0%, rgba(249,254,216,0.21) 90%); 
+}
+.entete {
+   position: relative; 
+   left: 25%;
+   width: 50%;
+   height: 150px;
+   border: 8px groove grey;
+   border-radius: 20px;
+   box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
+}
+ul {
+   position: relative;
+   left: 10%;
+   width:80%;
+   list-style-type: none;
+   border: 2px solid black;
+   border-radius: 20px;
+   background: linear-gradient(90deg,#000000 0%, #5c655c 80%);
+   box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
+   padding: 0;
+   margin-top: 90px;
+ }
+ li {
+   position: relative;
+   display: inline;
+   left: 22%;
+   background-color: white;
+   border: 3px solid green;
+   border-radius: 20px;
+   box-shadow: inset 10px 10px 5px 0px rgb(0 0 0 / 75%);
+   font-size: 2rem;
+   letter-spacing: 2px;
+   padding: 5px;
+ } 
+ .accueil {
+   left: 5%;
+ }
+ .metiers {
+   left: 13%;
+ }
+ .galerie {
+   left: 21%;
+ }
+ .brochure {
+   left: 29%;
+ }
+ .contact {
+   left: 37%;
+ }
+ a {
+   text-decoration: none;
+ }
+.h01 {
+   display: inline-block;
+   text-align: center;
+   font-size: 2rem;
+   margin-top: 65px;
+   margin-left: 12%; 
+   margin-bottom: 0px;
+   text-shadow: 4px 4px 2px rgba(134,121,121,0.6);
+} 
+.h1 {
+   text-decoration: underline;
+}
+p {
+   display: inline-block; 
+   margin-left: 7%;
+   max-width: 30%;
+   font-size: 1.4rem;
+   color: green;
+   border-top: 2px solid black;
+   border-bottom: 2px dashed black;
+   padding: 5px;
+}
+.couveur1 {
+   position: relative;
+   height: 250px;
+   width: 333px;
+   left: 50px;
+   top: 20px;
+   border: 2px solid black;
+   border-radius: 20px;
+   box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
+   transition: 0.4s ease-in;
+}
+.couveur4 {
+   position: relative;
+   height: 250px;
+   width: 333px;
+   left: 120px;
+   top: 20px;
+
+   border: 2px solid black;
+   border-radius: 20px;
+   box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
+   transition: 0.4s ease-in;
+}
+.couveur3 {
+   position: relative;
+   height: 250px;
+   width: 333px;
+   left: 50px;
+   top: 75px;
+   border: 2px solid black;
+   border-radius: 20px;
+   box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
+   margin-bottom: 500px;
+   transition: 0.4s ease-in;
+}
+.couveur2 {
+   position: relative;
+   height: 250px;
+   width: 333px;
+   left: 120px;
+   top: 75px;
+   border: 2px solid black;
+   border-radius: 20px;
+   box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
+   margin-bottom: 500px;
+   transition: 0.4s ease-in;
+}
+.couveur1:hover {
+   transform: scale(1.3);
+   z-index: 20;
+}
+.couveur2:hover {
+   transform: scale(1.3);
+   z-index: 20;
+}
+.couveur3:hover {
+   transform: scale(1.3);
+   z-index: 20;
+}
+.couveur4:hover {
+   transform: scale(1.3);
+   z-index: 20;
+}
+.h2 {
+   display: inline-block;
+   position: absolute;
+   top: 368px;
+   right: 255px;
+   font-size: 2rem;
+   text-shadow: 4px 4px 2px rgba(134,121,121,0.6);
+   text-decoration: underline;
+}
+.class {
+   position: absolute;
+   right: 238px;
+   top: 387px;
+   font-size: 2rem;
+   text-shadow: 4px 4px 2px rgba(134,121,121,0.6);
+}
+.classe{
+   position: absolute;
+   right: 625px;
+   top: 387px;
+   font-size: 2rem;
+   text-shadow: 4px 4px 2px rgba(134,121,121,0.6);
+}
+.p2 {
+   position: absolute;
+   top: 433px;
+   left: 1050px;
+}
+.video1 {
+   position: absolute; 
+   top: 590px;
+   right: 360px;
+   width: 445px;   
+   border: 2px solid black;
+   border-radius: 20px;
+   box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
+   transition: 0.4s ease-in;
+}
+.video2 {
+   position: absolute;
+   right: 360px;
+   width: 445px; 
+   top: 904px;
+   right: 65px;
+   border: 2px solid black;
+   border-radius: 20px;
+   box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
+   margin-bottom: 500px;
+   transition: 0.4s ease-in;
+}
+.espion {
+   position: relative;
+   height: 250px;
+   width: 215px;
+   top: 74px;
+   left: 404px;
+   margin-bottom: 500px;
+   border: 2px solid black;
+   border-radius: 20px;
+   box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
+   transition: 0.4s ease-in;
+}
+.espion2 {
+   position: relative;
+   height: 250px;
+   width: 215px;
+   bottom: 739.5px;
+   left: 704px;
+   border: 2px solid black;
+   border-radius: 20px;
+   box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
+   transition: 0.4s ease-in;
+}
+.video1:hover {
+   transform: scale(1.3);
+   z-index: 20;
+}
+.espion2:hover {
+   transform: scale(1.3);
+   z-index: 20;
+}
+.espion:hover {
+   transform: scale(1.3);
+   z-index: 20;
+}
+.video2:hover {
+   transform: scale(1.3);
+   z-index: 20;
+}
+.lq {
+   display: inline-block;
+   position: absolute;
+   left: 40.5%;
+   bottom: -665px;
+   z-index: 1000;
+}
+
+
+
+
+
+
+
+

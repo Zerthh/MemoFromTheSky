@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link href="./style.css" rel="stylesheet" />
+
+    <title>Bac à sable</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="./assets/images/header.png" alt="Logo du site LGZ" />
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Accueil</a></li>
+        <div class="hr-forum"><hr /></div>
+        <li class="li-forum"><a href="#">Forum</a></li>
+        <div class="hr-boutique"><hr /></div>
+        <li class="li-boutique"><a href="#">Boutique</a></li>
+        <div class="hr-album"><hr /></div>
+        <li class="li-album"><a href="#">Album</a></li>
+      </ul>
+      <div class="leftside">
+        <div class="img-block">
+          <img
+            src="./assets/images/gif-toutou.gif"
+            alt="Gif d'un toutou allongé"
+          />
+        </div>
+        <div class="memo-block">
+          <a
+            href="/Site annexe/index.html"
+            target="_blank"
+            title="Index des projets"
+            class="memo"
+            >Memo from the Sky</a
+          >
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="formulaire">
+        <form action="" method="get">
+          <div class="form-gauche">
+            <fieldset>
+              <legend>Votre prénom</legend>
+              <input
+                type="text"
+                name="prenom"
+                id="prenom"
+                class="input-prenom"
+                placeholder="Par ex. Enzo"
+                required
+              />
+            </fieldset>
+            <span class="br-querie"><br /></span>
+            <fieldset>
+              <legend>L'attitude</legend>
+              <p>
+                Cochez l'attitude à favoriser :
+                <br />
+                <br />
+                <input type="checkbox" name="severe" id="severe" />
+                <label for="severe">Sévère</label>
+                <br />
+                <input type="checkbox" name="patient" id="patient" />
+                <label for="patient">Patient</label>
+                <br />
+                <input type="checkbox" name="empathique" id="empathique" />
+                <label for="empathique">Empathique</label>
+                <br />
+                <input type="checkbox" name="honnete" id="honnete" />
+                <label for="honnete">Honnête</label>
+              </p>
+            </fieldset>
+            <span class="br-querie"><br /></span>
+            <fieldset>
+              <legend>La scolarité</legend>
+              <p>
+                Quel genre de scolarité préfèreriez-vous pour votre enfant :<br /><br />
+                <input
+                  type="radio"
+                  name="scolarite"
+                  value="domicile"
+                  id="domicile"
+                />
+                <label for="domicile">Ecole à Domicile</label>
+                <br />
+                <input
+                  type="radio"
+                  name="scolarite"
+                  value="publique"
+                  id="publique"
+                  required
+                />
+                <label for="publique">Ecole Publique</label>
+                <br />
+                <input type="radio" name="scolarite" value="catho" id="catho" />
+                <label for="catho">Ecole Catholique</label>
+                <br />
+                <input type="radio" name="scolarite" value="prive" id="prive" />
+                <label for="prive">Ecole Privé</label>
+              </p>
+            </fieldset>
+            <span class="br-querie"><br /></span>
+            <fieldset>
+              <legend>Pays d'éducation</legend>
+              <p>
+                <label for="pays-ideal"
+                  >Selon vous, quel serez le pays de rêve pour une bonne
+                  éducation :</label
+                >
+                <br />
+                <select name="pays-ideal" id="pays-ideal">
+                  <option value="france">France</option>
+                  <option value="etats-unies">Etats-Unies</option>
+                  <option value="algerie">Algérie</option>
+                  <option value="japon" selected>Japon</option>
+                  <option value="none">
+                    L'éducation ne dépends pas du pays
+                  </option>
+                </select>
+              </p>
+            </fieldset>
+          </div>
+          <div class="form-droite">
+            <label for="conseils" class="label-textarea"
+              ><span class="first-letter-label-area">D</span>es conseils pour
+              simplifier la vie des enfants ?</label
+            >
+            <textarea
+              id="conseils"
+              name="conseils"
+              placeholder="Entrez vos conseils ici."
+              required
+            ></textarea>
+          </div>
+          <div class="container-flex-button">
+            <div class="button-left">
+              <input type="submit" id="button" value="&#10140; Envoyer" />
+            </div>
+            <div class="button-right"></div>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-left">
+        <p class="phrase"><i>&#10139;</i> Suivez moi sur mes réseau :</p>
+
+        <a href="#rezo"
+          ><img class="reseau" src="./assets/images/reseau.png" alt="reseaux"
+        /></a>
+      </div>
+      <div class="footer-middle">
+        <div class="footer-middle-p-left">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+            unde.
+          </p>
+          <br />
+          <hr />
+          <br />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+            unde.
+          </p>
+          <br />
+          <hr />
+          <br />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+            unde.
+          </p>
+          <br />
+          <hr />
+          <br />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+            unde.
+          </p>
+          <div class="hr-querie">
+            <br />
+            <hr />
+            <br />
+          </div>
+        </div>
+        <div class="footer-middle-p-right">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+            unde.
+          </p>
+          <br />
+          <hr />
+          <br />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+            unde.
+          </p>
+          <br />
+          <hr />
+          <br />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+            unde.
+          </p>
+          <br />
+          <hr />
+          <br />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+            unde.
+          </p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p>
+          <strong>
+            Copyright 10/12/22: Luca & Co.
+            <br />
+            All rights reserved.
+          </strong>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

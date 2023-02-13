@@ -1,0 +1,2119 @@
+@font-face {
+    font-family: "Cinzel";
+    src: url('./assets/fonts/Cinzel_Decorative/CinzelDecorative-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Mystery Quest";
+    src: url('./assets/fonts/Mystery_Quest/MysteryQuest-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nosifer';
+    src: url('./assets/fonts/Nosifer/Nosifer-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Rock Salt';
+    src: url('./assets/fonts/Ranga/Ranga-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('./assets/images/montagne.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header img {
+    height: 230px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    top: -1px;
+    background: linear-gradient(90deg,#000000 50%, rgba(0,255,0,0) 90%);
+    border-top: 1px solid white;
+    width: 100%;
+    height: 90px;
+    font-family: 'Mystery Quest';
+    box-shadow: 0px -13px 24px -8px rgba(255,255,255,0.59);
+    margin-top: -3px;
+}
+
+.leftside {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    padding-right: 1.5%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.memo-block {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.memo {
+    align-self: center;
+    color: white;
+    transform: rotate(10deg); 
+    font-size: 22px;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    border-bottom: 2px solid; 
+    border-right: 2px solid;
+    border-radius: 20px 20px;
+    padding: 9px;
+    transition: 0.2s ease-out;
+}
+
+.memo:hover {
+    border-top: 2px solid white;
+    border-right: 2px solid;
+    border-left: 2px solid;
+    border-bottom: none;
+    transform: rotate(0deg);
+}
+
+.img-block {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 4%;
+    padding-bottom: 4px;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 50%;
+    list-style-type: none;
+    box-shadow: -20px 18px 24px -8px rgba(255,255,255,0.59);
+}
+
+.hr-album, .hr-forum, .hr-boutique, .hr {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+ul hr {
+    height: 40%;
+}
+
+nav li {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul a {
+    color: white; 
+    font-size: 25px; 
+    text-decoration: none;    
+    border: 2px solid;
+    padding: 2px 7px 2px 7px;
+    border-radius: 10px;
+    background: linear-gradient(270deg,#1e1b14 0%, #ffffff 200%);
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    box-shadow: 3px 3px 11px 0px rgba(255,255,255,0.52);
+}
+
+nav ul a:hover {background: linear-gradient(90deg,#1e1b14 0%, #ffffff 200%);}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(22, 1fr);
+    grid-template-rows: 160px 100px 100px 100px 100px 58px 100px 100px 100px 100px 102px 160px;
+}
+main a:hover{text-decoration: underline;}
+
+.aside-left {
+    grid-area: 2 / 3 / 7 / 7;
+    background-color: #EFEFF0;
+    border: 2px solid;
+    border-radius: 20px 20px 20px 20px;
+    overflow: auto;
+}
+
+.aside-left h2 {
+    font-family: 'Nosifer';
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0px 12px 13px -7px rgba(0,0,0,0.92);
+}
+
+.aside-left ul {
+    font-family: 'Rock Salt';
+    font-size: 25px;
+    padding-left: 35px;
+    padding-bottom: 20px;
+}
+
+.aside-left .added-tirait {
+    display: none;
+}
+
+.main-content {
+    grid-area: 2 / 8 / 7 / 16;
+    overflow: auto;
+    background-color: #EFEFF0;
+    border: 2px solid;
+    border-radius: 20px 0 0 20px;  
+}
+
+.main-content h1 {
+    font-family: "Cinzel";
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 2px rgba(0,0,0,0.6);
+    background-color: white;
+    border-radius: 20px 0 0 0;
+    box-shadow: 0px 12px 13px -7px rgba(0,0,0,0.92);
+}
+
+.main-content h2 {
+    box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.25);
+    text-decoration: underline;
+    background: radial-gradient(circle farthest-corner at center center, #ffffff 30%, #efeff0 90%);
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.date {
+    float: left;
+    font-family: 'Rock Salt';
+    font-size: 25px;
+    padding-left: 15px;
+    padding-right: 7px;
+}
+
+mark {
+    text-decoration: underline;
+}
+
+.main-content a {
+    text-decoration: none;
+}
+
+.main-content p {
+    font-family: 'Rock Salt';
+    font-size: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main-content ol {
+    font-family: 'Rock Salt';
+    font-size: 25px;
+    padding-left: 25px;
+}
+
+.main-content hr {
+    width: 80%;
+    margin: auto;
+}
+
+.aside-right {
+    grid-area: 2 / 17 / 12 / 21;
+    background-color: #EFEFF0;
+    border: 2px solid;
+    border-radius: 20px 20px 20px 20px;
+    overflow: auto;
+}
+
+.aside-right h1 {
+    font-family: "Cinzel";
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.6);
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0px 12px 13px -7px rgba(0,0,0,0.92);
+}
+
+.aside-right li {
+    font-family: 'Rock Salt';
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.aside-right h3 {
+    box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.25);
+    text-decoration: underline;
+    background: radial-gradient(circle farthest-corner at center center, #ffffff 30%, #efeff0 90%);
+    padding-bottom: 5px;
+    text-align: center;
+}
+.aside-right a{text-decoration: none;}
+.aside-right hr{width: 80%; margin: auto;}
+
+.bot-side {
+    grid-area: 8 / 3 / 12 / 16;
+    background-color: #EFEFF0;
+    overflow: auto;
+    border: 2px solid;
+    border-radius: 20px 20px 20px 20px;
+}
+
+table {
+    border-collapse: collapse;
+    cursor: pointer;
+}
+
+caption {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: "Cinzel";
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.6);
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
+    border-bottom: 2px solid black;
+    caption-side: top;
+}
+
+table td {
+    padding: 18.7px;
+    width: 20%;
+    font-size: 17.2px;
+    vertical-align: baseline;
+}
+
+thead th {
+    font-size: 19px;
+    text-decoration: underline;
+    background: radial-gradient(circle farthest-corner at center center, #ffffff 30%, #efeff0 90%);
+    padding-top: 11.1px;
+    padding-bottom: 11.1px;
+}
+
+.th-added {
+    display: none;
+}
+
+.first-th {border-right: 1px solid black;}
+.second-th {border-right: 1px solid black;}
+.third-th {border-right: 1px solid black;}
+.fourth-th {border-right: 1px solid black;}
+
+.color-first-row {
+    background: linear-gradient(0deg,#b2b2c0 0%, #ffffff 80%);
+    border-top: 1px solid black;
+    border-right: 1px solid black;}
+.color-second-row {
+    background: linear-gradient(180deg,#cdcdd6 0%, #ffffff 80%);
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;}
+.color-third-row {
+    background-color: white;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;}
+.color-four-row {
+    background-color: #E5E5E9;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;}
+.color-five-row {
+    background-color: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;}
+.color-six-row {
+    background-color: #E5E5E9;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;}
+.color-seven-row {
+    background-color: white;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;}
+.color-eight-row {
+    background-color: #E5E5E9;
+    border-bottom: 1px solid black;}
+.color-nine-row {
+    background-color: #E5E5E9;
+    border-right: 1px solid black;}
+.color-ten-row {
+    border-right: 1px solid black;
+    background-color: white;}
+.color-eleven-row {
+    background-color: #E5E5E9;
+    border-right: 1px solid black;}
+.color-twelve-row {background-color: white;}
+
+.added-td {
+    display: none;
+}
+
+.a-added {
+    display: none;
+}
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 260px;
+    background: radial-gradient(circle farthest-corner at center center, rgba(255,0,0,0) 0%, #000000 20%);
+    box-shadow: 0px 4px 24px 0px rgb(255, 255, 255);
+    color: white;
+    font-family: "Cinzel";
+    font-size: 0.8em;
+    border-top: 3px solid white;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 16%; 
+    box-sizing: border-box;
+    padding-left: 1%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.footer-middle {
+    display: flex;
+    justify-items: center;
+    height: 100%;
+    width: 64%; 
+    font-size: 0.8em;
+}
+
+.footer-right {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: center;
+    font-size: 0.8em;
+    text-decoration: underline;
+    width: 16%;  
+    height: 100%;
+    box-sizing: border-box;
+    padding-right: 1%;
+    padding-bottom: 1%;
+}
+
+.footer-middle-p-left {
+    width: 50%;
+    text-align: center;
+    align-self: center;
+}
+
+.footer-middle-p-right {
+    width: 50%;
+    text-align: center;
+    align-self: center;
+}
+
+footer hr {
+    width: 73%;
+    margin: auto;
+}
+
+.phrase {
+    font-size: 1.3em;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.reseau {
+    height: 140px;
+    width: 110%;
+    justify-self: center;
+    
+}
+
+.hr-querie {
+    display: none;
+}
+
+                /* Media Queries Ecran 4k */
+
+@media screen and (max-width: 2560px) and (min-width: 2000px) {
+    header img {
+        height: 280px;
+    }
+    .memo {
+        font-size: 27px;
+    }
+    nav ul a {
+        font-size: 30px; 
+    }
+    .aside-left h2 {
+        font-family: 'Nosifer';
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 11px;
+        background-color: white;
+        border-radius: 20px 20px 0px 0px;
+        box-shadow: 0px 12px 13px -7px rgba(0,0,0,0.92);
+    }    
+    .aside-left ul {
+        font-family: 'Rock Salt';
+        font-size: 27px;
+        padding-left: 35px;
+        padding-bottom: 0px;
+    }
+    .main-content h1 {
+        font-family: "Cinzel";
+        font-size: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        margin-bottom: 20px;
+        background-color: white;
+        border-radius: 20px 0 0 0;
+        box-shadow: 0px 12px 13px -7px rgba(0,0,0,0.92);
+    }    
+    .main-content h2 {
+        box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.25);
+        font-size: 25px;
+        text-decoration: underline;
+        background: radial-gradient(circle farthest-corner at center center, #ffffff 30%, #efeff0 90%);
+        padding-bottom: 5px;
+        text-align: center;
+    }    
+    .date {
+        float: left;
+        font-family: 'Rock Salt';
+        font-size: 27px;
+        padding-left: 15px;
+        padding-right: 7px;
+    }     
+    .main-content p {
+        font-family: 'Rock Salt';
+        font-size: 27px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }    
+    .main-content ol {
+        font-family: 'Rock Salt';
+        font-size: 27px;
+        padding-left: 25px;
+    }
+    caption {
+        font-size: 23px;
+        padding-top: 5px;
+        padding-bottom: 4px;
+    }
+    table td {
+        padding: 14.38px;
+        font-size: 19px;
+    }    
+    thead th {
+        font-size: 21px;
+    }
+    .aside-right h1 {
+        font-family: "Cinzel";
+        font-size: 23px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        margin-bottom: 20px;
+        background-color: white;
+        border-radius: 20px 20px 0 0;
+        box-shadow: 0px 12px 13px -7px rgba(0,0,0,0.92);
+    }    
+    .aside-right h3 {
+        box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.25);
+        text-decoration: underline;
+        background: radial-gradient(circle farthest-corner at center center, #ffffff 30%, #efeff0 90%);
+        padding-bottom: 5px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .aside-right li {
+        font-family: 'Rock Salt';
+        font-size: 27px;
+        padding-left: 10px;
+    }   
+    footer {
+        height: 300px;
+        font-size: 1em;
+    }
+    footer hr {
+        width: 67%;
+    }
+}
+
+                /* Memo media queries font-size */
+                /* Nav ul media queries font-size */
+
+@media screen and (max-width: 851px) {
+    .memo {
+        font-size: 21px;
+        border-bottom: 2px solid; 
+        border-right: 2px solid;
+        border-radius: 20px 20px;
+        padding: 8.5px;
+    }
+    nav ul a {
+        font-size: 24px; 
+        border: 2px solid white;
+        padding: 1.5px 6.5px 1.5px 6.5px;
+        border-radius: 9px;
+        text-shadow: 3.5px 3.5px 1.5px rgba(0,0,0,0.6);
+        box-shadow: 2.5px 2.5px 10.5px 0px rgba(255,255,255,0.52);
+    }
+}  
+@media screen and (max-width: 818px) {
+    .memo {
+        font-size: 20px;
+        border-bottom: 2px solid; 
+        border-right: 2px solid;
+        border-radius: 20px 20px;
+        padding: 8px;
+    }
+    nav ul a {
+        font-size: 23px; 
+        border: 2px solid white;
+        padding: 1px 6px 1px 6px;
+        border-radius: 8px;
+        text-shadow: 3px 3px 1px rgba(0,0,0,0.6);
+        box-shadow: 2px 2px 10px 0px rgba(255,255,255,0.52);
+    }
+}  
+@media screen and (max-width: 786px) {
+    .memo {
+        font-size: 19px;
+        border-bottom: 2px solid; 
+        border-right: 2px solid;
+        border-radius: 20px 20px;
+        padding: 6.5px;
+    }
+    nav ul a {
+        font-size: 22px; 
+        border: 2px solid white;
+        padding: 1px 5.5px 1px 5.5px;
+        border-radius: 6.5px;
+        text-shadow: 2.5px 2.5px 1px rgba(0,0,0,0.6);
+        box-shadow: 1.5px 1.5px 9px 0px rgba(255,255,255,0.52);
+    }
+}
+@media screen and (max-width: 754px) {
+    .memo {
+        font-size: 18px;
+        border-bottom: 1px solid; 
+        border-right: 1px solid;
+        border-radius: 20px 20px;
+        padding: 6px;
+    }
+    nav ul a {
+        font-size: 21px; 
+        border: 1px solid white;
+        padding: 1px 5px 1px 5px;
+        border-radius: 6px;
+        text-shadow: 2px 2px 1px rgba(0,0,0,0.6);
+        box-shadow: 1px 1px 8px 0px rgba(255,255,255,0.52);
+    }
+} 
+@media screen and (max-width: 721px) {
+    .memo {
+        font-size: 17px;
+        border-bottom: 1px solid; 
+        border-right: 1px solid;
+        border-radius: 15px 15px;
+        padding: 5.5px;
+    }
+    nav ul a {
+        font-size: 20px; 
+        border: 1px solid white;
+        padding: 1px 4.5px 1px 4.5px;
+        border-radius: 5.5px;
+        text-shadow: 2px 2px 1px rgba(0,0,0,0.6);
+        box-shadow: 1px 1px 7.5px 0px rgba(255,255,255,0.52);
+    }
+}
+@media screen and (max-width: 689px) {
+    .memo {
+        font-size: 16px;
+        border-bottom: 1px solid; 
+        border-right: 1px solid;
+        border-radius: 15px 15px;
+        padding: 5px;
+    }
+    nav ul a {
+        font-size: 19px; 
+        border: 1px solid white;
+        padding: 1px 4px 1px 4px;
+        border-radius: 5px;
+        text-shadow: 2px 2px 1px rgba(0,0,0,0.6);
+        box-shadow: 1px 1px 7px 0px rgba(255,255,255,0.52);
+    }
+}
+@media screen and (max-width: 657px) {
+    .memo {
+        font-size: 15px;
+        border-bottom: 1px solid; 
+        border-right: 1px solid;
+        border-radius: 15px 15px;
+        padding: 4.5px;
+    }
+    nav ul a {
+        font-size: 18px; 
+        border: 1px solid white;
+        padding: 1px 4px 1px 4px;
+        border-radius: 5px;
+        text-shadow: 2px 2px 1px rgba(0,0,0,0.6);
+        box-shadow: 1px 1px 7px 0px rgba(255,255,255,0.52);
+    }
+}
+@media screen and (max-width: 624px) {
+    .memo {
+        font-size: 14px;
+        border-bottom: 1px solid; 
+        border-right: 1px solid;
+        border-radius: 15px 15px;
+        padding: 4px;
+    }
+    nav ul a {
+        font-size: 17px; 
+        border: 1px solid white;
+        padding: 1px 4px 1px 4px;
+        border-radius: 5px;
+        text-shadow: 2px 2px 1px rgba(0,0,0,0.6);
+        box-shadow: 1px 1px 7px 0px rgba(255,255,255,0.52);
+    }
+}
+@media screen and (max-width: 592px) {
+    .memo {
+        font-size: 13px;
+        border-bottom: 1px solid; 
+        border-right: 1px solid;
+        border-radius: 15px 15px;
+        padding: 3.5px;
+    }
+    nav ul a {
+        font-size: 16px; 
+        padding: 1px 4px 1px 4px;
+        border-radius: 5px;
+        text-shadow: 2px 2px 1px rgba(0,0,0,0.6);
+        box-shadow: 1px 1px 7px 0px rgba(255,255,255,0.52);
+    }
+}
+@media screen and (max-width: 560px) {
+    .memo {
+        font-size: 12px;
+        border-bottom: 1px solid; 
+        border-right: 1px solid;
+        border-radius: 15px 15px;
+        padding: 3.5px;
+    }
+    nav ul a {
+        font-size: 15px; 
+        padding: 1px 4px 1px 4px;
+        border-radius: 5px;
+        text-shadow: 2px 2px 1px rgba(0,0,0,0.6);
+        box-shadow: 1px 1px 7px 0px rgba(255,255,255,0.52);
+    }
+}
+@media screen and (max-width: 527px) {
+    .memo {
+        font-size: 11px;
+        border-bottom: 1px solid; 
+        border-right: 1px solid;
+        border-radius: 15px 15px;
+        padding: 3.5px;
+    }
+    nav ul a {
+        font-size: 14px; 
+        padding: 1px 4px 1px 4px;
+        border-radius: 5px;
+        text-shadow: 2px 2px 1px rgba(0,0,0,0.6);
+        box-shadow: 1px 1px 7px 0px rgba(255,255,255,0.52);
+    }
+}
+@media screen and (max-width: 495px) {
+    .memo {
+        font-size: 11px;
+        border-bottom: 1px solid; 
+        border-right: 1px solid;
+        border-radius: 15px 15px;
+        padding: 3.5px;
+    }
+    nav ul a {
+        font-size: 14px; 
+        padding: 1px 4px 1px 4px;
+        border-radius: 5px;
+        text-shadow: 2px 2px 1px rgba(0,0,0,0.6);
+        box-shadow: 1px 1px 7px 0px rgba(255,255,255,0.52);
+    }
+}
+@media screen and (max-width: 463px) {
+    .memo {
+        font-size: 11px;
+        border-bottom: 1px solid; 
+        border-right: 1px solid;
+        border-radius: 15px 15px;
+        padding: 3.5px;
+    }
+    nav ul a {
+        font-size: 14px; 
+        padding: 1px 4px 1px 4px;
+        border-radius: 5px;
+        text-shadow: 2px 2px 1px rgba(0,0,0,0.6);
+        box-shadow: 1px 1px 7px 0px rgba(255,255,255,0.52);
+    }
+}
+@media screen and (max-width: 430px) { 
+    .memo {
+        font-size: 10px;
+        border-bottom: 1px solid; 
+        border-right: 1px solid;
+        border-radius: 14px 14px;
+        padding: 3px;
+    }
+    nav ul a {
+        font-size: 13px; 
+        padding: 1px 3px 1px 3px;
+        border-radius: 5px;
+        text-shadow: 2px 2px 1px rgba(0,0,0,0.6);
+        box-shadow: 1px 1px 7px 0px rgba(255,255,255,0.52);
+    }
+}
+@media screen and (max-width: 398px) {
+    .memo {
+        font-size: 10px;
+        border-bottom: 1px solid; 
+        border-right: 1px solid;
+        border-radius: 14px 14px;
+        padding: 3px;
+        }
+    nav ul a {
+        font-size: 13px; 
+        padding: 1px 3px 1px 3px;
+        border-radius: 5px;
+        text-shadow: 2px 2px 1px rgba(0,0,0,0.6);
+        box-shadow: 1px 1px 7px 0px rgba(255,255,255,0.52);
+    }
+}
+@media screen and (max-width: 366px) {
+    .memo {
+        font-size: 9px;
+        border-bottom: 1px solid; 
+        border-right: 1px solid;
+        border-radius: 14px 14px;
+        padding: 3px;
+    }
+    nav ul a {
+        font-size: 12px; 
+        padding: 1px 3px 1px 3px;
+        border-radius: 5px;
+        text-shadow: 2px 2px 1px rgba(0,0,0,0.6);
+        box-shadow: 1px 1px 7px 0px rgba(255,255,255,0.52);
+    }
+}
+@media screen and (max-width: 333px) {
+    .memo {
+        font-size: 8px;
+        border-bottom: 1px solid; 
+        border-right: 1px solid;
+        border-radius: 13px 13px;
+        padding: 3px;
+    }
+    nav ul a {
+        font-size: 11px; 
+        padding: 1px 3px 1px 3px;
+        border-radius: 5px;
+        text-shadow: 2px 2px 1px rgba(0,0,0,0.6);
+        box-shadow: 1px 1px 7px 0px rgba(255,255,255,0.52);
+    }
+}
+@media screen and (max-width: 301px) {
+    .memo {
+        font-size: 7px;
+        border-bottom: 1px solid; 
+        border-right: 1px solid;
+        border-radius: 13px 13px;
+        padding: 2px;
+    }
+    nav ul a {
+        font-size: 10px; 
+        padding: 1px 2px 1px 2px;
+        border-radius: 5px;
+        text-shadow: 2px 2px 1px rgba(0,0,0,0.6);
+        box-shadow: 1px 1px 7px 0px rgba(255,255,255,0.52);
+    }
+}
+@media screen and (max-width: 269px) {
+    .memo {
+        font-size: 6px;
+        border-bottom: 1px solid; 
+        border-right: 1px solid;
+        border-radius: 13px 13px;
+        padding: 2px;
+    }
+    nav ul a {
+        font-size: 9px; 
+        padding: 1px 2px 1px 2px;
+        border-radius: 5px;
+        text-shadow: 2px 2px 1px rgba(0,0,0,0.6);
+        box-shadow: 1px 1px 7px 0px rgba(255,255,255,0.52);
+    }
+}
+                    
+                /* nav media queries  */
+                /* Header media queries height */
+                   
+@media screen and (max-width: 1070px) {
+    nav {
+        height: 80px;
+    }
+    header img {
+        height: 210px;
+    }
+}
+@media screen and (max-width: 870px) {
+    nav {
+        height: 70px;
+    }
+    header img {
+        height: 190px;
+    }
+}
+@media screen and (max-width: 634px) {
+    nav {
+        height: 60px;
+    }
+                        header img {
+        height: 170px;
+    }
+}
+@media screen and (max-width: 505px) {
+    nav {
+        height: 50px;
+    }
+    header img {
+        height: 150px;
+    }
+}
+@media screen and (max-width: 416px) {
+    nav {
+        height: 40px;
+    }
+    header img {
+        height: 130px;
+    }
+}
+@media screen and (max-width: 356px) {
+    nav {
+        height: 35px;
+    }
+    header img {
+        height: 110px;
+    }
+}
+@media screen and (max-width: 286px) {
+    nav {
+        height: 30px;
+    }
+    header img {
+        height: 90px;
+    }
+}
+@media screen and (max-width: 260px) {
+    nav {
+        height: 25px;
+    }
+    header img {
+        height: 70px;
+    }
+}
+                    
+                /* Li media queries display none */
+                    
+@media screen and (max-width: 1337px) {
+    .li-album {
+        display: none;
+    }
+    .hr-album {
+        display: none;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .li-boutique {
+        display: none;
+    }
+    .hr-boutique {
+        display: none;
+    }
+}
+@media screen and (max-width: 830px) {
+    .li-forum {
+        display: none;
+    }
+    .hr-forum {
+        display: none;
+    }
+}
+
+                /* Footer media queries */
+@media screen and (max-width: 1650px) {
+    footer hr {
+        width: 85%;
+    }
+}
+@media screen and (max-width: 1492px) {
+    footer {
+        font-size: 0.75em; 
+    }
+    footer hr {
+        width: 87%;
+    }
+}
+@media screen and (max-width: 1385px) {
+    footer {
+        font-size: 0.70em; 
+    }
+    footer hr {
+        width: 88%;
+    }
+}
+@media screen and (max-width: 1290px) {
+    footer {
+        font-size: 0.65em; 
+    }
+}
+@media screen and (max-width: 1195px) {
+    footer {
+        font-size: 0.60em; 
+    }
+    footer hr {
+        width: 87%;
+    }
+    .reseau {
+        height: 130px;
+    }
+}
+@media screen and (max-width: 1095px) {     /* reduire la size du footer ici (-20px) */
+    footer {
+        font-size: 0.55em; 
+        height: 240px;
+    }
+}
+@media screen and (max-width: 995px) {
+    footer {
+        font-size: 0.50em; 
+    }
+    .reseau {
+        height: 100px;
+    }
+}
+@media screen and (max-width: 945px) {
+    footer hr {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 895px) {     /* reseau a 80px */
+    footer {
+        font-size: 0.45em; 
+    }
+    .footer-middle {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-middle-p-left {
+        width: 100%;
+    }
+    .footer-middle-p-right {
+        width: 100%;
+    }
+    .hr-querie {
+        display: block;
+    }
+    footer hr {
+        width: 45%;
+    }
+    .reseau {
+        height: 80px;
+    }
+}
+@media screen and (max-width: 810px) {
+    .footer-middle {
+        white-space: nowrap;
+    }
+    footer hr {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 721px) {     /* padding-right du footer-right réduit */
+    .footer-right {
+        padding-right: 0.5%;
+    }
+    footer hr {
+        width: 56%;
+    }
+}
+@media screen and (max-width: 698px) {     /* Footer-right en absolute */
+       .footer-right {
+            padding-right: 0%;
+            padding: 0px;
+       }
+       .footer-right p {
+            position: absolute;
+            bottom: 7px;
+            right: 7px;
+            text-decoration: underline;
+       }
+}
+@media screen and (max-width: 650px) {
+    footer hr {
+        width: 62%;
+    }
+}
+@media screen and (max-width: 611px) {
+    .footer-left {
+        font-size: 0.85em;
+    }
+    footer hr {
+        width: 65%;
+    }
+}
+@media screen and (max-width: 548px) {
+    .footer-left {
+        font-size: 0.85em;
+    }
+    footer hr {
+        width: 74%;
+    }
+    .reseau {
+        height: 75px;
+    }
+}
+@media screen and (max-width: 519px) {
+    .footer-left {
+        font-size: 0.8em;
+    }
+    .footer-middle-p-left, .footer-middle-p-right {
+        text-align: start;
+        padding-left: 12%;
+    }
+    footer hr {
+        text-align: start;
+        margin: 0px;
+        width: 78%;
+    }
+}
+@media screen and (max-width: 495px) {
+    footer hr {
+        width: 81%;
+    }
+    .reseau {
+       height: 70px;
+    }
+}
+@media screen and (max-width: 490px) {
+    .footer-middle {
+        font-size: 0.35rem;
+    }
+    .footer-middle-p-left, .footer-middle-p-right {
+        padding-left: 13%;
+    }
+    footer hr {
+        width: 77%;
+    }
+    .footer-left {
+        font-size: 0.7em;
+    }
+}
+@media screen and (max-width: 470px) {
+    .footer-middle {
+        font-size: 0.30rem;
+    }
+    .footer-middle-p-left, .footer-middle-p-right {
+        padding-left: 20%;
+    }
+    footer hr {
+        width: 68%;
+    }
+}
+@media screen and (max-width: 446px) {
+    .footer-middle-p-left, .footer-middle-p-right {
+        padding-left: 15%;
+    }
+    footer hr {
+        width: 72%;
+    }
+}
+@media screen and (max-width: 429px) {
+    footer {
+        height: 200px;
+    }
+    .footer-middle {
+        font-size: 0.25rem;
+    }
+    .footer-middle-p-left, .footer-middle-p-right {
+        padding-left: 20%;
+    }
+    footer hr {
+        width: 62%;
+    }
+    .footer-left {
+        font-size: 0.65em;
+    }
+}
+@media screen and (max-width: 397px) {
+    .footer-middle-p-left, .footer-middle-p-right {
+        padding-left: 10%;
+    }
+    footer hr {
+        width: 67.5%;
+    }
+    .footer-left {
+        font-size: 0.22rem;
+        line-height: 10px;
+    }
+    .reseau {
+        height: 60px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .footer-middle-p-left, .footer-middle-p-right {
+        padding-left: 10%;
+    }
+    footer hr {
+        width: 72%;
+    }
+    .reseau {
+        height: 50px;
+    }
+}
+@media screen and (max-width: 340px) {
+    footer hr {
+        width: 79%;
+    }
+}
+@media screen and (max-width: 315px) {
+    footer hr {
+        width: 85%;
+    }
+}
+@media screen and (max-width: 298px) {
+    .footer-left {
+        justify-content: center;
+        line-height: 8px;
+    }
+    footer hr {
+        width: 90%;
+    }
+    .reseau {
+        height: 30px;
+    }
+    .footer-left {
+        font-size: 0.20rem;
+    }
+}
+@media screen and (max-width: 272px) {
+    footer hr {
+        width: 99%;
+    }
+    .reseau {
+        height: 30px;
+    }
+    .footer-left {
+        font-size: 0.19rem;
+    }
+}
+@media screen and (max-width: 258px) {
+    .footer-left {
+        justify-content: center;
+    }
+    footer hr {
+        width: 103%;
+    }
+    .reseau {
+        height: 30px;
+    }
+    .footer-left {
+        font-size: 0.18rem;
+    }
+}
+@media screen and (max-width: 244px) {
+    .footer-left {
+        justify-content: center;
+    }
+    footer hr {
+        width: 109%;
+    }
+    .reseau {
+        height: 30px;
+    }
+    .footer-left {
+        font-size: 0.17rem;
+    }
+}
+
+            /* Grid-Children media queries */
+
+@media screen and (max-width: 1901px) {  /* tableau font-size & padding-bottom */
+    table th, table td {
+        font-size: 0.98rem;
+    }
+    table td {
+        padding-bottom: 26.5px;
+    }
+}
+@media screen and (max-width: 1880px) {  /* aside-right h1, h3, li  */
+    .aside-right h1, .aside-right h3 {
+        font-size: 1.2rem;
+    }
+    .aside-right li {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 1806px) {  /* aside-right h1, h3, li */
+    .aside-right h1, .aside-right h3 {
+        font-size: 1.1rem;
+    }
+    .aside-right li {
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 1776px) {  /* tableau font-size */
+    table th, table td {
+        font-size: 0.97rem;
+    }
+    table td {
+        padding-bottom: 26.5px;
+    }
+}
+@media screen and (max-width: 1764px) {  /* aside-left li font-size*/
+    .aside-left li {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 1747px) {  /* tableau padding-bottom &&& aside-right font-size*/
+    table th, table td {
+        font-size: 0.97rem;
+    }
+    table td {
+        padding-bottom: 20.5px;
+    }
+    .aside-right ul li, .aside-right h3{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 1725px) {  /* tableau padding-bottom */
+    table th, table td {
+        font-size: 0.97rem;
+    }
+    table td {
+        padding-bottom: 14.5px;
+    }
+}
+@media screen and (max-width: 1702px) {  /* aside-left li font-size*/
+    .aside-left li {
+        font-size: 1.45rem;
+    }
+}
+@media screen and (max-width: 1657px) {  /* aside-right h1, h3, li ++ Main content font-size*/
+    .aside-right h1, .aside-right h3 {
+        font-size: 1.05rem;
+    }
+    .aside-right ul li {
+        font-size: 1.35rem;
+    }
+    .main-content h2, .main-content p, .main-content .date, .main-content li {
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 1652px) {  /* aside-left li font-size*/
+    .aside-left li {
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 1621px) {  /* Main-content h1 font-size*/
+    .main-content h1 {
+        font-size: 1.45rem;
+    }
+}
+@media screen and (max-width: 1613px) {  /* tableau padding-bottom */
+    table th, table td {
+        font-size: 0.97rem;
+    }
+    table td {
+        padding-bottom: 8.5px;
+    }
+}
+@media screen and (max-width: 1603px) {  /* aside-left li font-size && ul padding-left */
+    .aside-left li {
+        font-size: 1.35rem;
+    }
+    .aside-left ul {
+        padding-left: 30px;
+    }
+}
+@media screen and (max-width: 1582px) {  /* aside-right h1, h3, li */
+    .aside-right h1, .aside-right h3 {
+        font-size: 1rem;
+    }
+    .aside-right ul li {
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 1567px) {  /* Main-content h1 font-size*/
+    .main-content h1 {
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 1540px) {  /* tableau font-size */
+    table th, table td {
+        font-size: 0.96rem;
+    }
+}
+@media screen and (max-width: 1528px) {  /* tableau font-size */
+    table th, table td {
+        font-size: 0.95rem;
+    }
+}
+@media screen and (max-width: 1526px) {  /* aside-left li font-size */
+    .aside-left li {
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 1515px) {  /* tableau font-size & td padding-top*/
+    table th, table td {
+        font-size: 0.95rem;
+    }
+    table td {
+        padding-top: 12.9px;
+    }
+}
+@media screen and (max-width: 1514px) {  /* Main-content h1 font-size*/
+    .main-content h1 {
+        font-size: 1.35rem;
+    }
+}
+@media screen and (max-width: 1509px) {  /* aside-right h1 */
+    .aside-right h1 {
+        font-size: 0.97rem;
+    }
+}
+@media screen and (max-width: 1493px) {  /* tableau font-size & td padding-top */
+    table th, table td {
+        font-size: 0.95rem;
+    }
+    table td {
+        padding-top: 6.7px;
+    }
+}
+@media screen and (max-width: 1476px) {  /* aside-left li font-size */
+    .aside-left li {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 1464px) {  /* aside-right h1 and all title + padding table */
+    .aside-right h1 {
+        font-size: 0.94rem;
+    }
+    .main-content h1 {
+        font-size: 1.30rem;
+    }
+    .aside-left h2 {
+        font-size: 1.35rem;
+    }
+    table caption {
+        font-size: 1.15rem;
+    }
+    table td {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+@media screen and (max-width: 1457px) {  /* tableau font-size */
+    table th, table td {
+        font-size: 0.949rem;
+    }
+}
+@media screen and (max-width: 1456px) {  /* tableau font-size */
+    table th, table td {
+        font-size: 0.948rem;
+    }
+}
+@media screen and (max-width: 1454px) {  /* tableau font-size */
+    table th, table td {
+        font-size: 0.947rem;
+    }
+}
+@media screen and (max-width: 1453px) {  /* tableau font-size & padding */
+    table th, table td {
+        font-size: 0.946rem;
+    }
+    table td {
+        padding-top: 10.6px;
+        padding-bottom: 10.6px;
+    }
+}
+@media screen and (max-width: 1452px) {  /* tableau font-size & padding */
+    table th, table td {
+        font-size: 0.946rem;
+    }
+    table td {
+        padding-top: 7.5px;
+        padding-bottom: 7.5px;
+    }
+}
+@media screen and (max-width: 1449px) {  /* tableau font-size & padding */
+    table th, table td {
+        font-size: 0.9rem;
+    }
+    table td {
+        padding-top: 13.5px;
+        padding-bottom: 13.5px;
+    }
+}
+@media screen and (max-width: 1432px) {  /* tableau padding */
+    table th, table td {
+        font-size: 0.9rem;
+    }
+    table td {
+        padding-top: 16.3px;
+        padding-bottom: 16.3px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media screen and (max-width: 1419px) {  /* aside-right h1 and all title */
+    .aside-right h1 {
+        font-size: 0.92rem;
+    }
+    .main-content h1 {
+        font-size: 1.28rem;
+    }
+    .aside-left h2 {
+        font-size: 1.33rem;
+    }
+    table caption {
+        font-size: 1.13rem;
+    }
+}
+@media screen and (max-width: 1390px) {  /* all font-size + padding table */
+    .aside-right h1, .aside-right h3 {
+        font-size: 0.88rem;
+    }
+    .aside-right ul li {
+        font-size: 1.2rem;
+    }
+    .main-content h1 {
+        font-size: 1.24rem;
+    }
+    .aside-left h2 {
+        font-size: 1.29rem;
+    }
+    table caption {
+        font-size: 1.09rem;
+    }
+    table td {
+        padding-top: 13.8px;
+        padding-bottom: 13.8px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .main-content h2, .main-content p, .main-content .date, .main-content li {
+        font-size: 1.25rem;
+    }
+}
+@media screen and (max-width: 1380px) {  /* tableau font-size + padding td */
+    table th, table td {
+        font-size: 0.85rem;
+    }
+    table td {
+        padding-top: 18.9px;
+        padding-bottom: 18.9px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}
+@media screen and (max-width: 1378px) {  /* tableau padding td */
+    table th, table td {
+        font-size: 0.85rem;
+    }
+    table td {
+        padding-top: 16.3px;
+        padding-bottom: 16.3px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}
+@media screen and (max-width: 1377px) {  /* aside-left ul padding-left */
+    .aside-left li {
+        font-size: 1.2rem;
+    }
+    .aside-left ul {
+      padding-left: 25px;
+    }
+}
+@media screen and (max-width: 1358px) {  /* tableau padding td */
+    table th, table td {
+        font-size: 0.85rem;
+    }
+    table td {
+        padding-top: 13.5px;
+        padding-bottom: 13.5px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}
+@media screen and (max-width: 1342px) {  /* aside-left h2 & main-content h1 font-size */
+    .main-content h1 {
+        font-size: 1.2rem;
+    }
+    .aside-left h2 {
+        font-size: 1.25rem;
+    }
+}
+@media screen and (max-width: 1330px) {  /* aside-right span title removed */
+    .media-querie {
+        display: none;
+    }
+}
+@media screen and (max-width: 1326px) {  /* tableau padding td */
+    table th, table td {
+        font-size: 0.85rem;
+    }
+    table td {
+        padding-top: 13.6px;
+        padding-bottom: 13.6px;
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+}
+@media screen and (max-width: 1310px) {  /* tableau padding td */
+    table th, table td {
+        font-size: 0.85rem;
+    }
+    table td {
+        padding-top: 13.6px;
+        padding-bottom: 13.6px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+@media screen and (max-width: 1304px) {  /* tableau padding td */
+    table th, table td {
+        font-size: 0.85rem;
+    }
+    table td {
+        padding-top: 13.6px;
+        padding-bottom: 13.6px;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+}
+@media screen and (max-width: 1299px) {  /* main-content h1 span title removed */
+    .media-querie-main {
+        display: none;
+    }
+}
+@media screen and (max-width: 1291px) {  /* tableau padding td */
+    table th, table td {
+        font-size: 0.85rem;
+    }
+    table td {
+        padding-top: 13.6px;
+        padding-bottom: 13.6px;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+}
+@media screen and (max-width: 1274px) {  /* all title + td padding */
+    .main-content h1 {
+        font-size: 1.16rem;
+    }
+    .aside-left h2 {
+        font-size: 1.21rem;
+    }
+    table caption {
+        font-size: 1.05rem;
+    }
+    table td {
+        padding-top: 11.2px;
+        padding-bottom: 11.2px;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+}
+@media screen and (max-width: 1242px) {  /* tableau padding td */
+    table th, table td {
+        font-size: 0.85rem;
+    }
+    table td {
+        padding-top: 11.2px;
+        padding-bottom: 11.2px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+@media screen and (max-width: 1133px) {  /* Footer hr */
+    footer hr {
+        width: 91%;
+    }
+}
+@media screen and (max-width: 1128px) {  /* aside-left h2 margin-bottom */
+    .aside-left li {
+        font-size: 1.2rem;
+    }
+    .aside-left ul {
+      padding-left: 25px;
+    }
+    .aside-left h2 {
+        margin-bottom: 8px;
+    }
+}
+@media screen and (max-width: 1225px) {  /* tableau padding td */
+    table th, table td {
+        font-size: 0.85rem;
+    }
+    table td {
+        padding-top: 8.5px;
+        padding-bottom: 8.5px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+@media screen and (max-width: 1107px) {  /* tableau padding td */
+    table th, table td {
+        font-size: 0.85rem;
+    }
+    table td {
+        padding-top: 8.5px;
+        padding-bottom: 8.5px;
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+}
+@media screen and (max-width: 1095px) {  /* Grid & a lot */
+    main {
+        display: grid;
+        grid-template-columns: repeat(22, 1fr);
+        grid-template-rows: 120px 100px 100px 100px 100px 58px 58px 100px 100px 100px 100px 58px 100px 100px 100px 100px 120px;
+    }
+    .main-content {
+        grid-area: 2 / 3 / 7 / 21;
+    }
+    .aside-left {
+        grid-area: 8 / 3 / 12 / 11;
+    }
+    .aside-right {
+        grid-area: 8 / 13 / 12 / 21;  
+        border-top-right-radius: 0px;  
+        border-bottom-right-radius: 0px;    
+    }
+    .bot-side {
+        grid-area: 13 / 3 / 17 / 21; 
+    }
+    .aside-left h2 {
+        font-size: 1.4rem;
+        margin-bottom: 13px;
+    }
+    table caption {
+        font-size: 1.39rem;
+    }
+    .aside-right h1, .aside-right h3 {
+        font-size: 1.22rem;
+    }
+    .aside-right ul li {
+        font-size: 1.4rem;
+        text-align: center;
+        padding: 0 10px 0 10px;
+    }
+    .aside-left li {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .aside-left ul {
+        padding: 0 10px 0 10px;
+        list-style-position: inside;
+    }
+    .main-content h2, .main-content p, .main-content .date, .main-content li {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .main-content h1 {
+        font-size: 1.5rem;
+    }
+    .main-content ol {
+        list-style-position: inside;
+    }
+    table th, table td {
+        font-size: 1.011rem;
+    }
+    table td {
+        padding-top: 9.8px;
+        padding-bottom: 9.8px;
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+}
+@media screen and (max-width: 1060px) {  /* tableau padding td */
+    table td {
+        padding-top: 9.8px;
+        padding-bottom: 9.8px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width: 1047px) {  /* tableau padding td */
+    table td {
+        padding-top: 9.8px;
+        padding-bottom: 9.8px;
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+}
+@media screen and (max-width: 1035px) {  /* tableau padding td */
+    table td {
+        padding-top: 9.8px;
+        padding-bottom: 9.8px;
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+}
+@media screen and (max-width: 1030px) {  /* tableau padding td */
+    table td {
+        padding-top: 6.8px;
+        padding-bottom: 6.8px;
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+}
+@media screen and (max-width: 1018px) {  /* tableau padding td & th */
+    table th, table td {
+        font-size: 1.011rem;
+    }
+    table th {
+        padding: 2px 5px 2px 5px;
+    }
+    table td {
+        padding-top: 9.9px;
+        padding-bottom: 9.9px;
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+    footer hr {
+        width: 93%;
+    }
+}
+@media screen and (max-width: 1013px) {  /* tableau padding td */
+    table td {
+        padding-top: 6.9px;
+        padding-bottom: 6.9px;
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+}
+@media screen and (max-width: 995px) {   /* footer hr */
+    footer hr {
+        width: 86%;
+    }
+}
+@media screen and (max-width: 991px) {  /* All title font-size & td padding */
+    .main-content h1 {
+        font-size: 1.41rem;
+    }
+    .aside-left h2 {
+        font-size: 1.31rem;
+        margin-bottom: 13px;
+    }
+    table caption {
+        font-size: 1.3rem;
+    }
+    .aside-right h1, .aside-right h3 {
+        font-size: 1.13rem;
+    }
+    table td {
+        padding-top: 7.2px;
+        padding-bottom: 7.2px;
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+}
+@media screen and (max-width: 986px) {  /* tableau padding td */
+    table td {
+        padding-top: 4.2px;
+        padding-bottom: 4.2px;
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+}
+@media screen and (max-width: 950px) {  /* Footer hr */
+    footer hr {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 926px) {  /* Footer hr */
+    footer hr {
+        width: 94%;
+    }
+}
+@media screen and (max-width: 895px) {  /* Footer hr */
+    footer hr {
+        width: 45%;
+    }
+}
+@media screen and (max-width: 889px) {  /* tableau padding td */
+    table th, table td {
+        font-size: 1.011rem;
+    }
+    table td {
+        padding-top: 4.2px;
+        padding-bottom: 4.2px;
+        padding-left: 4.2px;
+        padding-right: 4.2px;
+    }
+}
+@media screen and (max-width: 843px) {  /* Aside-left list-style-type: none & added-tirait */
+    .aside-left li {
+        list-style-type: none;
+    }
+    .aside-left .added-tirait {
+        display: inline;
+    }
+}
+@media screen and (max-width: 825px) {  /* Table Display removed-added & padding td */
+    table th, table td {
+        font-size: 1.011rem;
+    }
+    table td {
+        padding-top: 13.1px;
+        padding-bottom: 13.1px;
+        padding-left: 13.1px;
+        padding-right: 13.1px;
+    }
+    .removed-td {
+        display: none;
+    }
+    .added-td {
+        display: block;
+    }
+    .added-td a {
+        text-decoration: none;
+    }
+    .added-td:hover {
+        text-decoration: underline;
+    }
+    footer hr {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 805px) {  /* Table padding td */
+    table td {
+        padding-top: 13.1px;
+        padding-bottom: 13.1px;
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+}
+@media screen and (max-width: 800px) {  /* Table padding td */
+    table td {
+        padding-top: 13.2px;
+        padding-bottom: 13.2px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width: 796px) {  /* Table padding td */
+    table td {
+        padding-top: 10.2px;
+        padding-bottom: 10.2px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width: 791px) {  /* Table th "chrome" Display: none */
+    .th-chrome {
+        display: none;
+    }
+}
+@media screen and (max-width: 783px) {  /* Table th "Les" Display: none */
+    .th-les {
+        display: none;
+    }
+    table td {
+        padding-top: 13.2px;
+        padding-bottom: 13.2px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    footer hr {
+        width: 53%;
+    }
+}
+@media screen and (max-width: 767px) {  /* Table td Toptal a Display: none & td padding */
+    .a-removed {
+        display: none;
+    }
+    .a-added {
+        display: block;
+    }
+    table td {
+        padding-top: 13.2px;
+        padding-bottom: 13.2px;
+        padding-left: 13.1px;
+        padding-right: 13.1px;
+    }
+    footer hr {
+        width: 53%;
+    }
+}
+@media screen and (max-width: 746px) {  /* Table padding td */
+    table td {
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+}
+@media screen and (max-width: 745px) {  /* Table padding td */
+    table td {
+        padding-top: 12.9px;
+        padding-bottom: 12.9px;
+        padding-left: 12.9px;
+        padding-right: 12.9px;
+    }
+}
+@media screen and (max-width: 743px) {  /* Table padding td */
+    table td {
+        padding-top: 7.2px;
+        padding-bottom: 7.2px;
+        padding-left: 12.9px;
+        padding-right: 12.9px;
+    }
+}
+@media screen and (max-width: 731px) {  /* Table padding td */
+    table td {
+        padding-top: 7.2px;
+        padding-bottom: 7.2px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+@media screen and (max-width: 720px) {  /* Table padding td */
+    table td {
+        padding-top: 7.2px;
+        padding-bottom: 7.2px;
+        padding-left: 11.3px;
+        padding-right: 11.3px;
+    }
+    footer hr {
+        width: 57%;
+    }
+}
+@media screen and (max-width: 709px) {  /* Table padding td & lien réduit */
+    table td {
+        padding-top: 7.2px;
+        padding-bottom: 7.2px;
+        padding-left: 11.3px;
+        padding-right: 11.3px;
+    }
+    .reduire-le-lien {
+        display: none;
+    }
+}
+@media screen and (max-width: 671px) {  /* Table padding td & lien réduit */
+    table td {
+        padding-top: 7.2px;
+        padding-bottom: 7.2px;
+        padding-left: 11.3px;
+        padding-right: 11.3px;
+    }
+    .reduir-le-lien-2 {
+        display: none;
+    }
+}
+@media screen and (max-width: 668px) {  /* All font-size & padding td */
+    .main-content h1 {
+        font-size: 1.35rem;
+    }
+    .main-content h2, .main-content p, .main-content .date, .main-content li {
+        font-size: 1.34rem;
+    }
+    .aside-left h2 {
+        font-size: 1.25rem;
+        margin-bottom: 13px;
+    }
+    .aside-left li {
+        font-size: 1.34rem;
+    }
+    .aside-right h1, .aside-right h3 {
+        font-size: 1.07rem;
+    }
+    .aside-right ul li {
+        font-size: 1.34rem;
+    }
+    table caption {
+        font-size: 1.24rem;
+    }
+    table th, table td {
+        font-size: 1.005rem;
+    }
+    table td {
+        padding-top: 7.5px;
+        padding-bottom: 7.5px;
+        padding-left: 11.3px;
+        padding-right: 11.3px;
+    }
+}
+@media screen and (max-width: 665px) {  /* Table th réduit */
+    .th-reduit {
+        display: none;
+    }
+    .th-added {
+        display: inline;
+    }
+    footer hr {
+        width: 61%;
+    }
+}
+@media screen and (max-width: 642px) {  /* Table width atteinte */
+
+}
+@media screen and (max-width: 425px) {
+    footer hr {
+        width: 63%;
+    }
+}
+@media screen and (max-width: 375px) {
+    footer hr {
+        width: 71%;
+    }
+}
+@media screen and (max-width: 320px) {
+    footer hr {
+        width: 83%;
+    }
+}
+
